@@ -1,0 +1,42 @@
+<GridLayout rows="*, auto">
+
+
+    <ScrollView>
+    	    <StackLayout class="main-container">
+
+                    <AbsoluteLayout class="head">
+                    	<Image class="head-background" src="~/assets/background-2.jpg"></Image>
+                    	 <AbsoluteLayout>
+                    	 	<StackLayout class="actionbar-back" orientation="horizontal">
+                    			<Image class="btn-back" src="~/assets/arrow_back_grey.png"></Image>
+                    			<Label (tap)="navigateBack()" class="txt-back" text="BACK"></Label>
+                    		</StackLayout>
+                    	 </AbsoluteLayout>
+                        
+
+                        <AbsoluteLayout>
+                            <StackLayout class="app-details">
+                             <Label class=" text-center appname" text="BUYSAMA"></Label>
+                             <Label class="appdescription" text="Lorem Ipsum"></Label>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                         
+                    </AbsoluteLayout>
+                       <StackLayout class="body-container">
+    						<TextField class="tf " hint="Complete Name"></TextField>
+                            <TextField  class="tf " hint="Email "></TextField>
+                            <TextField class=" tf" hint="Password"></TextField>
+                            <TextField  class="tf" hint="Confirm Password "></TextField>
+                            <Button class="btn-signup" text="SIGN UP"></Button>
+                            <Label  (tap)="login()"  class="lbl-haveact" text="Already have an account? Sign In" ></Label>
+                            <StackLayout orientation="horizontal">
+                            	<StackLayout class="sl-hr hr-light m-15 "></StackLayout>
+                             	<Label text="OR" row="1"></Label>
+                            	<StackLayout class="sl-hr hr-light m-15 "></StackLayout>
+                            </StackLayout>
+                            <Button class="btn-conn-fb" text="CONNECT WITH FACEBOOK"></Button>
+                      </StackLayout>
+        	</StackLayout>
+    </ScrollView>
+     <bottom-tabview></bottom-tabview>
+</GridLayout>

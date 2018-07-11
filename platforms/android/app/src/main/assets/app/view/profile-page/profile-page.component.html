@@ -1,0 +1,50 @@
+
+<GridLayout rows="*, auto">
+
+    <ScrollView>
+    	    <StackLayout class="main-container">
+
+                    <AbsoluteLayout class="head">
+                    	<Image class="head-background" src="~/assets/red-bkg.jpg"></Image>
+                    	 <AbsoluteLayout>
+                    	 	<StackLayout class="actionbar-back" orientation="horizontal">
+                    			<Image class="btn-back" src="~/assets/arrow_back_grey.png"></Image>
+                    			<Label (tap)="navigateBack()" class="txt-back" text="BACK"></Label>
+                    		</StackLayout>
+                    		<Image class="profile-pic" src="~/assets/profile-pic.jpg"></Image>
+                    		<Label class="lbl-profilename" text="Kevin Aton"></Label>
+
+                    	 </AbsoluteLayout>  
+                    </AbsoluteLayout>
+                       <StackLayout class="body-container">
+                       	<AbsoluteLayout class="persoanlinfo-head">
+                       		<Label class="lbl-PI" text="Profile Information"></Label>
+                       		<Image class="btn-settings" src="~/assets/settings.png"></Image>
+    					     <StackLayout>
+    					   		<GridLayout rows="auto, auto, *" columns="auto, *">
+    					 
+    					    	</GridLayout>
+    						</StackLayout>
+                       	</AbsoluteLayout>
+                       	<StackLayout class="personalinfo-container">
+    	                   	<Label class="lbl-personalinfo" text="email"></Label>
+    	                   	<Label class="lbl-personaldetail" text="plaridelmust@gmail.com"></Label>
+    	                   	<Label class="lbl-personalinfo" text="age"></Label>
+    	                   	<Label class="lbl-personaldetail" text="18 yrs old"></Label>
+    	                   	<Label class="lbl-personalinfo" text="address"></Label>
+    	                   	<Label class="lbl-personaldetail" text="Cugman, Cagayan de Oro City"></Label>
+    	                   	<Label class="lbl-personalinfo" text="member since"></Label>
+    	                   	<Label  class="lbl-personaldetail" text="2017"></Label>
+
+    	                   	<Button  (tap)="navigateLogin()" class="btn-logout" text="LOG OUT"></Button> 
+                       </StackLayout>
+    					
+                      </StackLayout>
+        	</StackLayout>
+
+
+    </ScrollView>
+
+
+     <bottom-tabview></bottom-tabview>
+</GridLayout>

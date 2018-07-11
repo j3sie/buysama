@@ -1,0 +1,113 @@
+
+.background-img-card{
+  background-image: url("~/assets/blue_background.jpg");
+  background-size: cover;
+
+}
+.carousel-card{
+  border-radius: 10%;
+}
+  .points-details{
+  margin-left: 30;
+  margin-right: 30;
+}
+.lbl-points{
+  font-size: 30pt;
+  color:white;
+  font-weight: 200;
+}
+.lbl-pts{
+  font-size: 15pt;
+  color:white;
+  padding-top: 15;
+}
+.lbl{
+  font-size: 13pt;
+  color:white;
+  margin-top: 20;
+  margin-left: 57;
+  font-weight: 100;
+}
+.tab-menu{
+  margin-top: 280;
+}
+.tab-item{
+  margin-top: 30;
+}
+.tab-item1{
+
+}
+.item-cont{
+  padding: 5;
+}
+.point-no{
+  font-size: 20pt;
+  font-weight: 400;
+}
+.point-lbl{
+  margin-top: 10;
+   font-size: 10;
+  font-weight: 300;
+}
+.point-date{
+  font-size: 10;
+  font-weight: 300;
+  margin-left: 40;
+}
+
+.actionbar-back{
+  top:10;
+}
+.btn-back{
+  width: 30px;
+}
+.txt-back{
+  color:white;
+  font-size: 15pt;
+  font-family: 'Open sans';
+  top:10;
+}
+.txt-see_all{
+  margin-left: 260;
+  color: white;
+  font-weight: 100;
+}
+
+.tf-Search{
+  background-color: white;
+  margin-top: 10;
+  background-image: url("~/assets/search-icon.png");
+  background-repeat: no-repeat;
+  padding-left: 30; 
+  margin-left: 10;
+  background-size: 25;
+  background-position: left center;
+  width:320;
+}
+.redeem-tab{
+  margin:30;
+  background-color: #fafafa;
+}
+
+
+.Redeem-points{
+  margin-top: 85;
+}
+.Redeempoint-no{
+  color: white;
+  font-size: 20pt;
+  font-weight: 400;
+  background-color: #ed324d;
+  padding: 3 0 3 3;
+}
+.Redeempoint-lbl{
+  padding: 12 3 3 0;
+   font-size: 10;
+  font-weight: 400;
+  background-color: #ed324d;
+  color: white;
+}
+.company-name{
+  font-weight: 200;
+  font-size: 10;
+}

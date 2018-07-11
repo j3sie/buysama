@@ -1,0 +1,65 @@
+
+.main-container{
+	background-color: #fafafa;
+}
+.head{
+	 height: 280;
+}
+.head-background{
+	width:120%;
+	object-fit: cover;
+}
+.actionbar-back{
+	top:10;
+}
+.btn-back{
+	width: 30px;
+}
+.txt-back{
+	color:lightgray;
+	font-size: 15pt;
+	font-family: 'Open sans';
+	top:10;
+}
+.profile-pic{
+	border-radius: 80%;
+	width: 150;
+	top:40;
+	left: 100;
+}
+.lbl-profilename{
+	color: lightgray;
+	font-size: 30pt;
+	top:200;
+	left: 105;
+
+}
+.btn-settings{
+	margin-left: 260;
+	width: 25;
+
+}
+.personalinfo-container{
+	margin: 30 ;
+}
+.persoanlinfo-head{
+	margin: 30 30 0 30;
+}
+.lbl-PI{
+	font-size: 15pt;
+	font-weight: bold;
+}
+.lbl-personalinfo{
+	color:lightgray;
+	
+}
+.lbl-personaldetail{
+	font-size: 15pt;
+	margin-bottom: 10;
+}
+.btn-logout{
+	margin-top: 30;
+	border-radius: 50%;
+	height: 50;
+	background-color:lightgray;
+}

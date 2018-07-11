@@ -1,0 +1,17 @@
+.bottom-nav {
+	tab-inactive-color: black;
+    tab-background-color: lightgray;
+    tab-icon-width:200px;
+	tab-active-color: #ed324d;
+}
+/*.inactive {
+    tab-inactive-color: black;
+    tab-background-color: lightgray;
+    tab-icon-width:200px;
+}
+
+.active {
+	tab-active-color: #ed324d;
+	tab-background-color: lightgray;
+	tab-icon-width:200px;
+}*/

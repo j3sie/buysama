@@ -1,0 +1,96 @@
+
+.main-container{
+	background-color: #fafafa;
+}
+.head{
+	 height: 280;
+}
+.app-details{
+	align-items: center;
+
+}
+.appname{
+	/*font-family: 'Open sans'*/
+	text-align: center;
+	color:#ed324d;
+	font-size: 50pt;
+	font-weight: bold;
+	margin-top:-18;
+	margin-left:60;
+
+text-align: center;}
+
+.appdescription{
+	color:#ed324d;
+	font-family: 'Open sans';
+	font-size: 20pt;
+	margin-top: -9;
+	margin-left:125;
+	z-index: 100;
+}
+.body-container{
+	margin: 30;
+
+}
+.tf{
+	background-color: white;
+	margin-top: 10;
+	background-repeat: no-repeat;
+	padding-left: 30; 
+	margin-left: 10;
+	background-size: 25;
+	background-position: left center;
+
+}
+.tf-email{
+	background-color: white;
+	margin-top: 10;
+	background-image: url("~/assets/account.png");
+	 background-repeat: no-repeat;
+	 padding-left: 30; 
+	margin-left: 10;
+	background-size: 25;
+	background-position: left center;
+
+}
+.tf-password{
+	background-color: white;
+	margin-top: 10;
+	background-image: url("~/assets/password.png");
+	 background-repeat: no-repeat;
+	 padding-left: 30; 
+	margin-left: 10;
+	background-size: 25;
+	background-position: left center;
+
+}
+
+.btn-signin{
+	margin: 10 0 10 0;
+	border-radius: 50%;
+	background-color: #ed324d;
+	color: white;
+	font-weight: 600;
+
+
+}
+.lbl-haveact{
+	margin-left: 50;
+}
+.btn-conn-fb{
+	margin-top: 10;
+	border-radius: 50%;
+	background-color:#3a5a98 ;
+	color:white;
+	font-weight: 600;
+
+}
+.try{
+	 padding-left: 30;
+    padding-right: 10;
+    padding-bottom: 20;
+    padding-top: 20;
+}
+.sl-hr{
+	width: 110;
+}

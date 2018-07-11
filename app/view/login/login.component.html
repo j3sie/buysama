@@ -1,0 +1,31 @@
+<GridLayout rows="*, auto">
+    <ScrollView>
+        <StackLayout class="main-container">
+                    <StackLayout class="head">
+                        <Image src="~/assets/background-2.jpg"></Image>
+                        <AbsoluteLayout>
+                            <StackLayout class="app-details">
+                             <Label class=" text-center appname" text="BUYSAMA"></Label>
+                             <Label class="appdescription" text="Lorem Ipsum"></Label>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                         
+                    </StackLayout>
+                       <StackLayout class="body-container">
+    						<TextField class="user-email tf tf-email" hint="Email"></TextField>
+                            <TextField  class="tf tf-password" hint="Password "></TextField>
+                            <Button (tap)="navigateHomecards()" class="btn-signin" text="SIGN IN"></Button>
+                            <Label   (tap)="signup()" class="lbl-haveact" text="Don't have an account? Sign Up" ></Label>
+                            <StackLayout orientation="horizontal">
+                            	<StackLayout class="sl-hr hr-light m-15 "></StackLayout>
+                             	<Label text="OR" row="1"></Label>
+                            	<StackLayout class="sl-hr hr-light m-15 "></StackLayout>
+                            </StackLayout>
+                            <Button class="btn-conn-fb" text="CONNECT WITH FACEBOOK"></Button>
+                      </StackLayout>
+        </StackLayout>
+    </ScrollView>  
+
+    <bottom-tabview></bottom-tabview>
+    
+</GridLayout>

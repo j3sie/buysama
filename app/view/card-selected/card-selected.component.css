@@ -1,0 +1,173 @@
+.page{
+	background-color: #f8f8f8;
+}
+.main-container{
+	background-color: #fafafa;
+}
+.head{
+	 height: 280;
+}
+.head-background{
+	width:120%;
+	object-fit: cover;
+}
+.actionbar-back{
+	top:10;
+}
+.btn-back{
+	width: 30px;
+}
+.txt-back{
+	color:lightgray;
+	font-size: 15pt;
+	font-family: 'Open sans';
+	top:10;
+}
+.selected-cardPic{
+	border-radius: 10%;
+	width: 320;
+	top:50;
+	left: 20;
+}
+.center-nav{
+	padding-left: 275;
+}
+.btn-message-lightgray ,.btn-setting-lightgray{
+	width:25;
+	margin: 5;
+}
+.card-detail-holder{
+	margin-left: 30;
+}
+.card-logo{
+	width: 45;
+	margin: 0 10 0 0;
+}
+.card-name{
+	font-size: 25pt;
+	font-weight: 600;
+	font-family: 'Open sans';
+	padding-top: 5;
+
+}
+
+.lbl-points{
+	font-size: 40pt;
+	color:gray;
+	font-weight: 200;
+}
+.lbl-pts{
+	font-size: 20pt;
+	color:gray;
+	padding-top: 20;
+}
+.lbl{
+	font-size: 15pt;
+	color:gray;
+	margin-top: -10;
+	font-weight: 200;
+}
+
+.Redeempoint-no{
+  color: white;
+  font-size: 20pt;
+  font-weight: 400;
+  background-color: #ed324d;
+  padding: 3 0 3 3;
+}
+.Redeempoint-lbl{
+  padding: 12 3 3 0;
+   font-size: 10;
+  font-weight: 400;
+  background-color: #ed324d;
+  color: white;
+}
+.company-name{
+  font-weight: 200;
+  font-size: 10;
+}
+
+.tab-btn{
+	font-size: 15;
+	padding: 10 0 10 0;
+	text-align: center;
+	background-color: #f1f1f1;
+	font-weight: 200;
+}
+
+
+.item-cont{
+  padding: 15;
+}
+.point-no{
+  font-size: 20pt;
+  font-weight: 400;
+}
+.point-lbl{
+  margin-top: 10;
+   font-size: 10;
+  font-weight: 300;
+}
+.point-date{
+  font-size: 10;
+  font-weight: 300;
+  margin-left: 40;
+}
+
+.actionbar-back{
+  top:10;
+}
+.btn-back{
+  width: 30px;
+}
+.txt-back{
+  color:white;
+  font-size: 15pt;
+  font-family: 'Open sans';
+  top:10;
+}
+.txt-see_all{
+  margin-left: 260;
+  color: white;
+  font-weight: 100;
+}
+
+.tf-Search{
+  background-color: white;
+  margin-top: 10;
+  background-image: url("~/assets/search-icon.png");
+  background-repeat: no-repeat;
+  padding-left: 30; 
+  margin-left: 10;
+  background-size: 25;
+  background-position: left center;
+  border-radius: 5;
+  width:300;
+}
+.redeem-tab{
+  margin:30;
+  background-color: #fafafa;
+}
+
+
+.Redeem-points{
+  margin-top: 85;
+}
+.Redeempoint-no{
+  color: white;
+  font-size: 20pt;
+  font-weight: 400;
+  background-color: #ed324d;
+  padding: 3 0 3 3;
+}
+.Redeempoint-lbl{
+  padding: 12 3 3 0;
+   font-size: 10;
+  font-weight: 400;
+  background-color: #ed324d;
+  color: white;
+}
+.company-name{
+  font-weight: 200;
+  font-size: 10;
+}
