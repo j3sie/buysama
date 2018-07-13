@@ -1,27 +1,31 @@
 {
-  "_from": "nativescript-drop-down",
+  "_args": [
+    [
+      "nativescript-drop-down@4.0.1",
+      "D:\\jesie\\buySamaNgApp"
+    ]
+  ],
+  "_from": "nativescript-drop-down@4.0.1",
   "_id": "nativescript-drop-down@4.0.1",
   "_inBundle": false,
   "_integrity": "sha512-pfmKFhyflZxzXs1vVDm570ZBDgrZO7GNUOHJcZCVdAMa5SSMUC4LiXzC4JHzR/zAIaKKv5Xu7i5zbfmCIn8dNg==",
   "_location": "/nativescript-drop-down",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-drop-down",
+    "raw": "nativescript-drop-down@4.0.1",
     "name": "nativescript-drop-down",
     "escapedName": "nativescript-drop-down",
-    "rawSpec": "",
+    "rawSpec": "4.0.1",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "4.0.1"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-drop-down/-/nativescript-drop-down-4.0.1.tgz",
-  "_shasum": "46b85ea1fd28f4b2bf2ed2f3dcfb59cca7553c62",
-  "_spec": "nativescript-drop-down",
+  "_spec": "4.0.1",
   "_where": "D:\\jesie\\buySamaNgApp",
   "author": {
     "name": "Peter Staev",
@@ -30,14 +34,12 @@
   "bugs": {
     "url": "https://github.com/PeterStaev/NativeScript-Drop-Down/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Dick Smith",
       "url": "https://github.com/DickSmith"
     }
   ],
-  "deprecated": false,
   "description": "A NativeScript DropDown widget.",
   "homepage": "https://github.com/PeterStaev/NativeScript-Drop-Down#readme",
   "keywords": [

@@ -1,163 +1,156 @@
-
-<ActionBar title=" Parallax Scrolling" class="action-bar">
-</ActionBar>
-<GridLayout class="page">
-    <ScrollView #scrollView (scroll)="onScroll($event, scrollView, topView)">
-        <StackLayout>
-            <StackLayout #topView height="300">
-                <!-- this is the header for collapsing --->
-                <!-- Note: this can be any type of layout you want -->
-                
-                <AbsoluteLayout class="head">
-                    <Image class="head-background" src="~/assets/red-bkg.jpg"></Image>
-                     <AbsoluteLayout>
-                        <StackLayout class="actionbar-back" orientation="horizontal">
-                            <Image class="btn-back" src="~/assets/arrow_back_grey.png"></Image>
-                            <Label (tap)="navigateBack()" class="txt-back" text="BACK"></Label>
-                        </StackLayout>
-                        <Image class="selected-cardPic" src="~/assets/card.png"></Image>
-                     </AbsoluteLayout> 
-                </AbsoluteLayout>
-            
-             
-            </StackLayout>
-            <StackLayout width="100%" backgroundColor="#fafafa">
-                <!--Add your page content here-->
-                <StackLayout orientation="horizontal" class="center-nav">
-                <Image class="btn-message-lightgray" src="~/assets/message.png"></Image>
-                <Image class="btn-setting-lightgray" src="~/assets/setting-lightgray.png"></Image>
-                </StackLayout>
-                <StackLayout class="card-detail-holder">
-                    <StackLayout orientation="horizontal" class="">
-                        <Image class="card-logo" src="~/assets/card-logo.jpg"></Image>
-                        <Label class="card-name" text="Starbucks"></Label>
-                    </StackLayout>
-                    <GridLayout class="pts-holder" columns="auto,auto" rows="auto,auto" >
-                        <Label class="lbl-points" text="2300" col="0" row="0" ></Label>
-                        <Label class="lbl-pts" text="PTS" col="1" row="0" ></Label>
-                    </GridLayout>
-                        <Label class="lbl" text="Last transaction: 22/12/17"></Label>
-
-                </StackLayout>
-                <FlexboxLayout alignItems="flex-start" width="100%"  backgroundColor="lightgray">
-                    <Label text="QR CODE"  class="tab-btn" width="50%" height="45"></Label>
-                    <Label text="REDEEM"  (tap)="navigateRedeemtab()"  class="tab-btn" width="50%" height="45" ></Label>
-                </FlexboxLayout>
-                 <TextField  class="tf-Search" hint="Search"></TextField>
-
-                 <StackLayout  >
-                   <GridLayout columns="*,*" rows="*,*,*,*" width="320"  class="tab-item1">
-                    <StackLayout col="0" row="0"  class="item-cont" >
-                        <AbsoluteLayout>
-                            <Image src="~/assets/item1.jpg" col="0" row="1" ></Image>
-                            <StackLayout orientation="horizontal" >
-                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points" >
-                                <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
-                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
-                            </GridLayout>
-                            </StackLayout>
-                        </AbsoluteLayout>
-                           <Label text="Christmas Teddy Bear" ></Label>
-                           <Label class="company-name" text="Robinsons Mall" ></Label>
-                    </StackLayout>
-                    <StackLayout col="1" row="0" class="item-cont" >
-                            <AbsoluteLayout>
-                            <Image src="~/assets/item2.jpg" col="0" row="1" ></Image>
-                            <StackLayout orientation="horizontal" >
-                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
-                                <Label class="Redeempoint-no" text="1000" col="0" row="0"  ></Label>
-                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
-                            </GridLayout>
-                            </StackLayout>
-                        </AbsoluteLayout>
-                           <Label text="DC Electric Fan" ></Label>
-                           <Label class="company-name" text="Shell" ></Label>
-                        </StackLayout>
-                  
-                    <StackLayout col="0" row="1" class="item-cont" >
-                            <AbsoluteLayout>
-                            <Image src="~/assets/item3.jpg" col="0" row="1" ></Image>
-                            <StackLayout orientation="horizontal" >
-                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
-                                <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
-                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
-                            </GridLayout>
-                            </StackLayout>
-                        </AbsoluteLayout>
-                           <Label text="Christmas Teddy Bear" ></Label>
-                           <Label class="company-name" text="Robinsons Mall" ></Label>
-                        </StackLayout>
-                   
-                    <StackLayout col="1" row="1" class="item-cont">
-                           <AbsoluteLayout>
-                            <Image src="~/assets/item4.jpg" col="0" row="1" ></Image>
-                            <StackLayout orientation="horizontal" >
-                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
-                                <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
-                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
-                            </GridLayout>
-                            </StackLayout>
-                        </AbsoluteLayout>
-                           <Label text="Christmas Teddy Bear" ></Label>
-                           <Label class="company-name" text="Robinsons Mall" ></Label>
-                    </StackLayout>
-                  </GridLayout>
-                </StackLayout>
-            </StackLayout>
-        </StackLayout>
-    </ScrollView>
-</GridLayout>
-
-<!-- 
 <GridLayout rows="*, auto">
-
-
-<ScrollView>
-	    <StackLayout class="main-container">
-
-                <AbsoluteLayout class="head">
-                	<Image class="head-background" src="~/assets/red-bkg.jpg"></Image>
-                	 <AbsoluteLayout>
-                	 	<StackLayout class="actionbar-back" orientation="horizontal">
-                			<Image class="btn-back" src="~/assets/arrow_back_grey.png"></Image>
-                			<Label (tap)="navigateBack()" class="txt-back" text="BACK"></Label>
-                		</StackLayout>
-                		<Image class="selected-cardPic" src="~/assets/card.png"></Image>
-                	 </AbsoluteLayout> 
-                </AbsoluteLayout>
-                <StackLayout orientation="horizontal" class="center-nav">
-                	<Image class="btn-message-lightgray" src="~/assets/message.png"></Image>
-                	<Image class="btn-setting-lightgray" src="~/assets/setting-lightgray.png"></Image>
-                </StackLayout>
-                <StackLayout class="card-detail-holder">
-                	<StackLayout orientation="horizontal" class="">
-                		<Image class="card-logo" src="~/assets/card-logo.jpg"></Image>
-                		<Label class="card-name" text="Starbucks"></Label>
-					</StackLayout>
-					  <GridLayout class="pts-holder" columns="auto,auto" rows="auto,auto" >
-						    <Label class="lbl-points" text="2300" col="0" row="0" ></Label>
-						    <Label class="lbl-pts" text="PTS" col="1" row="0" ></Label>
-					  </GridLayout>
-					  <Label class="lbl" text="Last transaction: 22/12/17"></Label>
-
-       				 </StackLayout>
-    </StackLayout>
-
+    <GridLayout class="page">
+        <ScrollView #scrollView (scroll)="onScroll($event, scrollView, topView)">
+            <StackLayout>
+                <StackLayout #topView height="300">
+                    <AbsoluteLayout class="head">
+                        <Image class="head-background" src="~/assets/red-bkg.jpg"></Image>
+                         <AbsoluteLayout>
+                            <StackLayout class="actionbar-back" orientation="horizontal">
+                                <Image class="btn-back" src="~/assets/arrow_back_grey.png"></Image>
+                                <Label (tap)="navigateBack()" class="txt-back" text="BACK"></Label>
+                            </StackLayout>
+                            <Image class="selected-cardPic" src="~/assets/card.png"></Image>
+                         </AbsoluteLayout> 
+                    </AbsoluteLayout>
  
-</ScrollView>   
-    <StackLayout class="tabs">
-        <TabView  selectedIndex="0" >
-        <StackLayout *tabItem="{title: 'QR CODE'}">
-           <Label text="jkfkfhnmkdmfhk" ></Label>
-        </StackLayout>
+                </StackLayout>
+                <StackLayout width="100%" backgroundColor="#fafafa">
+                    <!--Add your page content here-->
+                    <StackLayout orientation="horizontal" class="center-nav">
+                        <Image class="btn-message-lightgray" src="~/assets/message.png"></Image>
+                        <Image class="btn-setting-lightgray" src="~/assets/setting-lightgray.png"></Image>
+                    </StackLayout>
+                    <StackLayout class="card-detail-holder">
+                        <StackLayout orientation="horizontal" class="">
+                            <Image class="card-logo" src="~/assets/card-logo.jpg"></Image>
+                            <Label class="card-name" text="Starbucks"></Label>
+                        </StackLayout>
+                        <GridLayout class="pts-holder" columns="auto,auto" rows="auto,auto" >
+                            <Label class="lbl-points" text="2300" col="0" row="0" ></Label>
+                            <Label class="lbl-pts" text="PTS" col="1" row="0" ></Label>
+                        </GridLayout>
+                            <Label class="lbl" text="Last transaction: 22/12/17"></Label>
 
-        <StackLayout *tabItem="{title: 'REDEEM'}" class="redeem-tab">
-           
-        </StackLayout>
-        
-    </TabView>
-    </StackLayout>
-     <bottom-tabview></bottom-tabview>
+                    </StackLayout>
+                    <!-- tab -->
+                    <FlexboxLayout alignItems="flex-start" width="100%"  backgroundColor="lightgray">
+                        <Label text="QR CODE"  class="tab-btn" width="50%" height="45"></Label>
+                        <Label text="REDEEM"  (tap)="navigateRedeemtab()"  class="tab-btn" width="50%" height="45" ></Label>
+                    </FlexboxLayout>
+
+                     <TextField  class="tf-Search" hint="Search"></TextField>
+
+                     <StackLayout  >
+                       <GridLayout columns="*,*" rows="*,*,*,*" width="320"  class="tab-item1">
+                        <StackLayout col="0" row="0"  class="item-cont" >
+                            <AbsoluteLayout>
+                                <Image  (tap)="openModal()" src="~/assets/item1.jpg" col="0" row="1" ></Image>
+                                <StackLayout orientation="horizontal" >
+                                <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points" >
+                                    <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
+                                    <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                                </GridLayout>
+                                </StackLayout>
+                            </AbsoluteLayout>
+                               <Label text="Christmas Teddy Bear" ></Label>
+                               <Label class="company-name" text="Robinsons Mall" ></Label>
+                        </StackLayout>
+                        <StackLayout col="1" row="0" class="item-cont" >
+                                <AbsoluteLayout>
+                                <Image src="~/assets/item2.jpg" col="0" row="1" ></Image>
+                                <StackLayout orientation="horizontal" >
+                                <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                    <Label class="Redeempoint-no" text="1000" col="0" row="0"  ></Label>
+                                    <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                                </GridLayout>
+                                </StackLayout>
+                            </AbsoluteLayout>
+                               <Label text="DC Electric Fan" ></Label>
+                               <Label class="company-name" text="Shell" ></Label>
+                            </StackLayout>
+                      
+                        <StackLayout col="0" row="1" class="item-cont" >
+                                <AbsoluteLayout>
+                                <Image src="~/assets/item3.jpg" col="0" row="1" ></Image>
+                                <StackLayout orientation="horizontal" >
+                                <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                    <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
+                                    <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                                </GridLayout>
+                                </StackLayout>
+                            </AbsoluteLayout>
+                               <Label text="Christmas Teddy Bear" ></Label>
+                               <Label class="company-name" text="Robinsons Mall" ></Label>
+                            </StackLayout>
+                       
+                        <StackLayout col="1" row="1" class="item-cont">
+                               <AbsoluteLayout>
+                                <Image src="~/assets/item4.jpg" col="0" row="1" ></Image>
+                                <StackLayout orientation="horizontal" >
+                                <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                    <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
+                                    <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                                </GridLayout>
+                                </StackLayout>
+                            </AbsoluteLayout>
+                               <Label text="Christmas Teddy Bear" ></Label>
+                               <Label class="company-name" text="Robinsons Mall" ></Label>
+                        </StackLayout>
+                      </GridLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+
+
+
+
+
+    <bottom-tabview></bottom-tabview>
+
 </GridLayout>
-     
- -->
+
+
+<StackLayout style.zIndex="999" modal size="lg" alignment="middle"  duration="100" (open)="onOpenModal()" (close)="onCloseModal()">
+    <ScrollView>
+        <StackLayout height="95%">
+        <StackLayout borderRadius="3" rows="*, auto" class=" bg-white " >
+                <Label  text="X" class=" x-close pull-right"></Label>
+                <StackLayout>
+                    <TextView class="header-title" text="Are you sure do you want to Redeem this items?" editable="false"></TextView>
+                 <StackLayout >   
+                      <ListView class="list-group" height="250" [items]="data" (itemTap)="onItemTap($event)">
+                    <ng-template let-item="item">
+                        <StackLayout class="list-group-item" orientation="horizontal" >
+                             <Image  style="background-color: #AA0078; height: 220px;" [src]="item.src"  class=""></Image>
+                            <GridLayout class="list-group-item" rows="auto, *, *, *" columns="auto">
+                                <Label row="0" col="0" [text]="item.text" class="item-name"></Label>
+                                <Label row="1" col="0" [text]="item.points" class="item-name"></Label>
+                                <Label row="2" col="0" [text]="item.qty" class="item-qty"></Label>
+                                <Label row="3s" col="0" [text]="item.location" class="item-qty"></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </ng-template>
+                </ListView>
+            </StackLayout>
+                    <Label text="Robinsons Card"></Label>
+                    <Label text="Total: 1500 Points"></Label>
+                    <Label text="Balance: 6000"></Label>    
+                    <Label text="Remaining Balance: 4500 Points"></Label>
+
+
+                </StackLayout>
+                <StackLayout>
+            </StackLayout>
+
+            <WrapLayout class="m-y-2 m-r-15 ">
+                <!-- <Label  class="m-y-10 p-10 text-warning"></Label> -->
+                <Button (tap)="closeModal()" text="REDEEM" class="btn-modal-close"></Button>
+            </WrapLayout>
+        </StackLayout>
+    </StackLayout>
+    </ScrollView>
+    </StackLayout>
+

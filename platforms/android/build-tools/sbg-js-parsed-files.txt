@@ -89,6 +89,7 @@ D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nati
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-drop-down\angular\index.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-drop-down\drop-down-common.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-drop-down\drop-down.js
+D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-hidden\hidden.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-intl\index.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-intl\nativescript-intl-common.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-intl\nativescript-intl.js
@@ -245,8 +246,10 @@ D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\tns-
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\utils.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xhr\xhr.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xml\xml.js
+D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\add-card\add-card.component.js
+D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\add-card-2\add-card-2.component.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\bottom-tabview\bottom-tabview.component.js
+D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\home-cards\home-cards.component.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\login\login.component.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\profile-page\profile-page.component.js
 D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\signup\signup.component.js
-D:\jesie\buySamaNgApp\platforms\android\app\src\main\assets\app\view\signup\signup.components.js

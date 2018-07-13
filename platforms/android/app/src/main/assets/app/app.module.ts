@@ -8,6 +8,14 @@ import { ProfilepageComponent } from "./view/profile-page/profile-page.component
 import { BottomtabviewComponent } from "./view/bottom-tabview/bottom-tabview.component";
 import { HomecardsComponent } from "./view/home-cards/home-cards.component";
 import { CardselectedComponent } from "./view/card-selected/card-selected.component";
+import { AddcardComponent } from "./view/add-card/add-card.component";
+import { Addcard2Component } from "./view/add-card-2/add-card-2.component";
+import { Try1Component } from "./view/try1/try1.component";
+import { Try2Component } from "./view/try2/try2.component";
+import { ModalComponent } from "./view/modal/modal.component";
+
+
+
 
 import { NativescriptBottomNavigationModule} from "nativescript-bottom-navigation/angular";
 
@@ -41,6 +49,12 @@ import { ItemDetailComponent } from "./item/item-detail.component";
         BottomtabviewComponent,
         HomecardsComponent,
         CardselectedComponent,
+        AddcardComponent,
+        Addcard2Component,
+        Try1Component,
+        Try2Component,
+        ModalComponent
+  
     ],
     providers: [
         ItemService

@@ -1,0 +1,52 @@
+<ActionBar title="Custom Modal" class="action-bar">
+</ActionBar>
+
+<GridLayout class="page">
+	<StackLayout class="home-panel m-y-auto">
+		<Button class="btn" (tap)="openModal()" text="Open Modal"></Button>
+	</StackLayout>
+
+	<StackLayout style.zIndex="999" modal size="md" alignment="middle" dismissable="true" duration="100" (open)="onOpenModal()" (close)="onCloseModal()">
+		<StackLayout borderRadius="3" rows="*, auto" class="p-t-15 bg-white">
+
+			<GridLayout class="entry" rows="auto" columns="auto, *" (tap)="onTap();">
+				<GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-info">
+					<Label class="m-y-auto text-center text-info" fontSize="16" text="I"></Label>
+				</GridLayout>
+				<Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Infomation"></Label>
+			</GridLayout>
+
+			<GridLayout class="entry" rows="auto" columns="auto, *" (tap)="onTap();">
+				<GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-danger">
+					<Label class="m-y-auto text-center text-danger" fontSize="16" text="D"></Label>
+				</GridLayout>
+				<Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Danger"></Label>
+			</GridLayout>
+
+			<GridLayout class="entry" rows="auto" columns="auto, *" (tap)="onTap();">
+				<GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-primary">
+					<Label class="m-y-auto text-center text-primary" fontSize="16" text="P"></Label>
+				</GridLayout>
+				<Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Primary"></Label>
+			</GridLayout>
+
+			<GridLayout class="entry" rows="auto" columns="auto, *" (tap)="onTap();">
+				<GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-warning">
+					<Label class="m-y-auto text-center text-warning" fontSize="16" text="W"></Label>
+				</GridLayout>
+				<Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Warning"></Label>
+			</GridLayout>
+
+			<GridLayout class="p-x-30 p-y-5" rows="auto" columns="auto, *" (tap)="onTap();">
+				<GridLayout col="0" width="32" height="32" class="p-5 m-y-5 img-circle border-success">
+					<Label class="m-y-auto text-center text-success" fontSize="16" text="S"></Label>
+				</GridLayout>
+				<Label col="1" class="m-l-15 m-y-auto text-left text-dark" fontSize="" text="Success"></Label>
+			</GridLayout>
+
+			<WrapLayout class="m-y-2 m-r-15 pull-right">
+				<Label (tap)="closeModal()" text="CANCEL" class="m-y-10 p-10 text-warning"></Label>
+			</WrapLayout>
+		</StackLayout>
+	</StackLayout>
+</GridLayout>

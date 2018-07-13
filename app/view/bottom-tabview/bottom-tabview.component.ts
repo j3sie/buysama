@@ -40,7 +40,7 @@ export class BottomtabviewComponent implements OnInit {
     }
     else if (this.selectedTab === 2)
     {
-      this.routerExtensions.navigate(["/home-cards"]);
+      this.routerExtensions.navigate(["/add-card"]);
     }
     else if (this.selectedTab === 3)
     {

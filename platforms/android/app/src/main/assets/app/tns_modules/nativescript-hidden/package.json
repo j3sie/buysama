@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      "nativescript-hidden@1.0.0",
+      "D:\\jesie\\buySamaNgApp"
+    ]
+  ],
+  "_from": "nativescript-hidden@1.0.0",
+  "_id": "nativescript-hidden@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-q9w5BR6eJcN5lmLhEykESHBTqzg=",
+  "_location": "/nativescript-hidden",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-hidden@1.0.0",
+    "name": "nativescript-hidden",
+    "escapedName": "nativescript-hidden",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-hidden/-/nativescript-hidden-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "D:\\jesie\\buySamaNgApp",
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanaelA/nativescript-hidden/issues"
+  },
+  "description": "A plugin to allow nativescript to support hidden visibility",
+  "homepage": "https://github.com/NathanaelA/nativescript-hidden",
+  "keywords": [
+    "NativeScript",
+    "hidden",
+    "visibility",
+    "css"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/NathanaelA/nativescript-hidden/blob/master/LICENSE"
+  },
+  "main": "hidden.js",
+  "name": "nativescript-hidden",
+  "nativescript": {
+    "platforms": {
+      "android": "2.0.0",
+      "ios": "2.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanaelA/nativescript-hidden.git"
+  },
+  "scripts": {
+    "debug.android": "npm run preparedemo && cd demo && tns debug android --emulator",
+    "debug.ios": "npm run preparedemo && cd demo && tns debug ios --emulator",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "preparedemo": "cd demo && tns plugin remove nativescript-hidden && tns plugin add .. && tns install",
+    "setup": "cd demo && npm install && tns plugin add .. && cd ..",
+    "start": "npm run demo.android"
+  },
+  "version": "1.0.0"
+}

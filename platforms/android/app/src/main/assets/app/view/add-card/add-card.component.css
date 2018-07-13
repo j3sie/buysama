@@ -1,0 +1,47 @@
+.page{
+	background-color: #f1f1f1;
+}
+
+.tf-Search{
+  background-color: white;
+  margin-top:5;
+  margin-bottom:15;
+  background-image: url("~/assets/search-icon.png");
+  background-repeat: no-repeat;
+  padding-left: 30; 
+  margin-left: 10;
+  background-size: 25;
+  background-position: left  center ;
+  width:320;
+  border-radius: 5;
+}
+.step-holder{
+	margin: 25 0 10 0;
+}
+.select-card{
+	margin-left: 25;
+	font-size: 15pt;
+}
+.step-number-active{
+	text-align: right;
+}
+.step-number{
+	color: lightgray;
+}
+.item-cont{
+  padding: 5;
+}
+.point-no{
+  font-size: 20pt;
+  font-weight: 400;
+}
+.point-lbl{
+  margin-top: 10;
+   font-size: 10;
+  font-weight: 300;
+}
+.point-date{
+  font-size: 10;
+  font-weight: 300;
+  margin-left: 40;
+}

@@ -1,0 +1,207 @@
+
+
+
+    <GridLayout rows="*, auto">
+
+    
+        <StackLayout class="main" xmlns:ns="nativescript-carousel">
+            <StackLayout class="background-img-card" >
+            <AbsoluteLayout>
+                    <StackLayout class="actionbar-back" orientation="horizontal">
+                        <Image class="btn-back" src="~/assets/arrow_back_grey.png"></Image>
+                        <Label (tap)="navigateBack()" class="txt-back" text="BACK"></Label>
+                        <Label (tap)="navigateBack()" class="txt-see_all" text="See All" ></Label>
+                    </StackLayout>
+            </AbsoluteLayout>
+            <ns:Carousel height="260" pageChanged="myChangeEvent" >
+            
+                <ns:CarouselItem id="slide1"  verticalAlignment="center" >
+                    <StackLayout class="points-details">
+                        <StackLayout orientation="horizontal" >
+                            <GridLayout class="pts-holder" columns="auto,auto" rows="auto,auto" >
+                                <Label class="lbl-points" text="2300" col="0" row="0" ></Label>
+                                <Label class="lbl-pts" text="PTS" col="1" row="0" ></Label>
+                            </GridLayout>
+                            <Label class="lbl" text="Last Transaction:22/12/17"></Label>
+                        </StackLayout>
+                        <Image class="carousel-card" src="~/assets/card.png"></Image>
+                    </StackLayout>
+                </ns:CarouselItem>
+                <ns:CarouselItem id="slide2" verticalAlignment="center">
+                   <StackLayout class="points-details">
+                        <StackLayout orientation="horizontal" >
+                            <GridLayout class="pts-holder" columns="auto,auto" rows="auto,auto" >
+                                <Label class="lbl-points" text="2300" col="0" row="0" ></Label>
+                                <Label class="lbl-pts" text="PTS" col="1" row="0" ></Label>
+                            </GridLayout>
+                            <Label class="lbl" text="Last Transaction:22/12/17"></Label>
+                        </StackLayout>
+                        <Image class="carousel-card" src="~/assets/card.png"></Image>
+                    </StackLayout>
+                </ns:CarouselItem>
+                <ns:CarouselItem id="slide3" verticalAlignment="center">
+                    <StackLayout class="points-details">
+                        <StackLayout orientation="horizontal" >
+                            <GridLayout class="pts-holder" columns="auto,auto" rows="auto,auto" >
+                                <Label class="lbl-points" text="2300" col="0" row="0" ></Label>
+                                <Label class="lbl-pts" text="PTS" col="1" row="0" ></Label>
+                            </GridLayout>
+                            <Label class="lbl" text="Last Transaction:22/12/17"></Label>
+                        </StackLayout>
+                        <Image class="carousel-card" src="~/assets/card.png"></Image>
+                    </StackLayout>
+                </ns:CarouselItem>
+            </ns:Carousel>
+        </StackLayout>
+        </StackLayout>
+    
+            <TabView class="tab-menu" selectedIndex="0" >
+        <StackLayout *tabItem="{title: 'QR CODE'}"  >
+            <ScrollView>
+
+              <GridLayout columns="*,*" rows="*,*,*,*" width="320"  class="tab-item">
+                    <StackLayout col="0" row="0"  class="item-cont" >
+                            <Image src="~/assets/prestige.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="400" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout col="1" row="0" class="item-cont" >
+                            <Image src="~/assets/premium_coffee.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="2300" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout col="0" row="1" class="item-cont" >
+                            <Image (tap)="navigateSelectedcard()" src="~/assets/starbucks.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="2300" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout col="1" row="1" class="item-cont">
+                            <Image src="~/assets/robinsons.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="2300" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout col="0" row="2" class="item-cont">
+                            <Image src="~/assets/happyplus.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="2300" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout col="1" row="2" class="item-cont">
+                            <Image src="~/assets/shell.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="2300" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout col="0" row="3" class="item-cont">
+                            <Image src="~/assets/caltex.png" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto">
+                                <Label class="point-no" text="2300" col="0" row="0" ></Label>
+                                <Label class="point-lbl" text="PTS" col="1" row="0" ></Label>
+                                <Label class="point-date" text="12/11/17" col="2" row="0" ></Label>
+                            </GridLayout>
+                        </StackLayout>
+                    </StackLayout>
+                  </GridLayout>
+            </ScrollView>
+        </StackLayout>
+
+        <StackLayout *tabItem="{title: 'REDEEM'}" class="redeem-tab">
+            <TextField  class="tf-Search" hint="Search"></TextField>
+            <ScrollView>
+                
+              <GridLayout columns="*,*" rows="*,*,*,*" width="320"  class="tab-item1">
+                    <StackLayout col="0" row="0"  class="item-cont" >
+                        <AbsoluteLayout>
+                            <Image src="~/assets/item1.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
+                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                            </GridLayout>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                           <Label text="Christmas Teddy Bear" ></Label>
+                           <Label class="company-name" text="Robinsons Mall" ></Label>
+                    </StackLayout>
+                    <StackLayout col="1" row="0" class="item-cont" >
+                            <AbsoluteLayout>
+                            <Image src="~/assets/item2.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                <Label class="Redeempoint-no" text="1000" col="0" row="0"  ></Label>
+                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                            </GridLayout>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                           <Label text="DC Electric Fan" ></Label>
+                           <Label class="company-name" text="Shell" ></Label>
+                        </StackLayout>
+                  
+                    <StackLayout col="0" row="1" class="item-cont" >
+                            <AbsoluteLayout>
+                            <Image src="~/assets/item3.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
+                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                            </GridLayout>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                           <Label text="Christmas Teddy Bear" ></Label>
+                           <Label class="company-name" text="Robinsons Mall" ></Label>
+                        </StackLayout>
+                   
+                    <StackLayout col="1" row="1" class="item-cont">
+                           <AbsoluteLayout>
+                            <Image src="~/assets/item4.jpg" col="0" row="1" ></Image>
+                            <StackLayout orientation="horizontal" >
+                            <GridLayout  columns="auto,auto,*" rows="auto,auto" class="Redeem-points">
+                                <Label class="Redeempoint-no" text="400" col="0" row="0"  ></Label>
+                                <Label class="Redeempoint-lbl" text="PT" col="1" row="0"></Label>
+                            </GridLayout>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                           <Label text="Christmas Teddy Bear" ></Label>
+                           <Label class="company-name" text="Robinsons Mall" ></Label>
+                    </StackLayout>
+                  </GridLayout>
+            </ScrollView>
+        </StackLayout>
+        
+    </TabView>
+
+    <ScrollView>
+    
+    </ScrollView>
+
+    <bottom-tabview></bottom-tabview>
+</GridLayout>

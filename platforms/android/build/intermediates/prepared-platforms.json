@@ -12,6 +12,7 @@
     "nativescript-bottom-navigation": true,
     "nativescript-carousel": true,
     "nativescript-drop-down": true,
+    "nativescript-hidden": true,
     "nativescript-theme-core": true,
     "reflect-metadata": true,
     "rxjs": true,

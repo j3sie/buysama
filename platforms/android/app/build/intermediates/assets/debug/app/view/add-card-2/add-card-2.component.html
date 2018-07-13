@@ -1,0 +1,33 @@
+<GridLayout class="page" rows="*, auto">
+	 <ScrollView>
+	 	<StackLayout>
+	 		<AbsoluteLayout class="head">
+                <Image class="head-background" src="~/assets/blue_background.jpg"></Image>
+                <AbsoluteLayout>
+                   	<GridLayout class="step-holder"  columns="*,*" rows="*" >
+			 			<Label col="0" row="0" class="step-number-active" text="2"></Label>
+			 			<Label col="1" row="0" class="step-number" text="of 2"></Label>
+			 		</GridLayout>
+                    <Image class="selected-cardPic" src="~/assets/card.png"></Image>
+                </AbsoluteLayout> 
+            </AbsoluteLayout>
+
+            <StackLayout class="form2-holder" >
+			 	<Label class=" lbl-top"  text="One Last thing to complete the process."></Label>
+			 	<Label class="lbl-text"   text="Complete Name"></Label>
+			 	<TextField class="tf" hint="First Name, Last Name"></TextField>
+			 	<Label class="lbl-text"  text="Card Number"></Label>
+			 	<TextField class="tf" hint="Password" secure="true"></TextField>
+			 	<Button  class="btn-addcard" text="ADD CARD"></Button>
+
+
+            </StackLayout>
+
+	 	
+	 		
+
+        </StackLayout>
+    </ScrollView>
+
+	<bottom-tabview></bottom-tabview>
+</GridLayout>

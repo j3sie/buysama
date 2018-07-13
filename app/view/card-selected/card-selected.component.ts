@@ -1,10 +1,14 @@
-import { Component, OnInit } from "@angular/core";
+
 import { ScrollView, ScrollEventData } from 'tns-core-modules/ui/scroll-view';
 import { Image } from 'tns-core-modules/ui/image';
 import { View } from 'tns-core-modules/ui/core/view';
 import { Page } from "tns-core-modules/ui/page";
 import { screen } from 'tns-core-modules/platform';
 
+
+import { Component, OnInit, ViewChild, ElementRef, Input } from "@angular/core";
+
+import { ModalComponent } from "../modal";
 @Component({
     selector: "card-selected",
     moduleId: module.id,
@@ -13,6 +17,10 @@ import { screen } from 'tns-core-modules/platform';
 })
 export class CardselectedComponent implements OnInit {
 
+
+    data = [];
+
+      @ViewChild(ModalComponent) modal: ModalComponent;
     constructor(private _page: Page) {
 
         this._page.actionBarHidden = true;
@@ -32,11 +40,46 @@ export class CardselectedComponent implements OnInit {
         }
     }
 
+
+
+
+
     navigateRedeemtab( ){
     	 console.log('hello');
     }
 
-     ngOnInit(): void {}
+     ngOnInit(): void {
+
+        this.data.push({ text: "Christmas Teddy Bear", points:"500", qty:"Qty 1", location:"Robinsons Mall", src: "~/assets/item3.jpg" });
+        this.data.push({ text: "Ivysaur", src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" });
+        this.data.push({ text: "Ivysaur", src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" });
+        // this.data.push({ text: "Venusaur", src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" });
+        // this.data.push({ text: "Charmander", src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" });
+  
+   
+     }
+
+
+       onTap() {
+        alert("clicked an item");
+    }
+    
+    openModal() {
+        this.modal.show();
+    }
+
+    closeModal() {
+        this.modal.hide();
+    }
+    
+    onOpenModal() {
+        console.log("opened modal");
+    }
+
+    onCloseModal() {
+        console.log("closed modal");
+    }
+
 }
 
 

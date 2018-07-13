@@ -1,0 +1,51 @@
+.page{
+	background-color: lightgray;
+}
+.head{
+	 height: 280;
+}
+.head-background{
+	width:120%;
+	object-fit: cover;
+}
+.selected-cardPic{
+	border-radius: 10%;
+	width: 320;
+	top:50;
+	left: 20;
+}
+.step-holder{
+	margin: 25 0 10 160;
+}
+.select-card{
+	margin-left: 25;
+	font-size: 15pt;
+}
+.step-number-active{
+	text-align: right;
+}
+.step-number{
+	color: lightgray;
+}
+.form2-holder{
+	margin: 10 30 10 30
+}
+.lbl-top{
+	font-size: 15;
+	margin: 15 0 15 0;
+}
+.lbl-text{
+	font-size: 15;
+	margin: 8 0 5 0;
+}
+.tf{
+	background-color: #fafafa;
+	font-size: 12;
+	border-radius: 5;
+}
+.btn-addcard{
+	margin-top: 20;
+	background-color: #ed324d;
+	border-radius: 50%;
+	color: white;
+}

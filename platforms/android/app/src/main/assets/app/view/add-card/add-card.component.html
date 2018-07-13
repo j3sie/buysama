@@ -1,0 +1,38 @@
+<GridLayout class="page" rows="*, auto">
+	 <ScrollView>
+	 	<StackLayout>
+	 		<GridLayout class="step-holder"  columns="*,*" rows="*" >
+	 			<Label col="0" row="0" class="step-number-active" text="1"></Label>
+	 			<Label col="1" row="0" class="step-number" text="of 2"></Label>
+	 		</GridLayout>
+	 		<Label class="select-card" text="Select a card to add"></Label>
+	 		<TextField  class="tf-Search" hint="Search"></TextField>
+
+              <GridLayout columns="*,*" rows="*,*,*,*" width="320"  class="tab-item">
+                    <StackLayout col="0" row="0"  class="item-cont" >
+                        <Image (tap)="navigateAddcard()" src="~/assets/prestige.jpg" col="0" row="1" ></Image>
+                    </StackLayout>
+                    <StackLayout col="1" row="0" class="item-cont" >
+                        <Image src="~/assets/premium_coffee.jpg" col="0" row="1" ></Image>
+                    </StackLayout>
+                    <StackLayout col="0" row="1" class="item-cont" >
+                        <Image (tap)="navigateSelectedcard()" src="~/assets/starbucks.jpg" col="0" row="1" ></Image>
+                    </StackLayout>
+                    <StackLayout col="1" row="1" class="item-cont">
+                        <Image src="~/assets/robinsons.jpg" col="0" row="1" ></Image>
+                    </StackLayout>
+                    <StackLayout col="0" row="2" class="item-cont">
+                        <Image src="~/assets/happyplus.jpg" col="0" row="1" ></Image>
+                    </StackLayout>
+                    <StackLayout col="1" row="2" class="item-cont">
+                        <Image src="~/assets/shell.jpg" col="0" row="1" ></Image>
+                    </StackLayout>
+                    <StackLayout col="0" row="3" class="item-cont">
+                            <Image src="~/assets/caltex.png" col="0" row="1" ></Image>
+                    </StackLayout>
+                  </GridLayout>
+        </StackLayout>
+    </ScrollView>
+
+	<bottom-tabview></bottom-tabview>
+</GridLayout>
